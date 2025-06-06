@@ -11,6 +11,11 @@ Before creating migrations, make sure you have the following libraries installed
 ```bash
 pip install alembic sqlalchemy psycopg2-binary
 ```
+---
+
+Add a .env variable called `DATABASE_URL` in the root of the file migrations. Assigning the value `db_url` located in the secrets.
+
+---
 
 ## ✏️ Step 1: Modify your SQLAlchemy models
 

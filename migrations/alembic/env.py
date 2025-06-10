@@ -7,7 +7,6 @@ from alembic import context
 
 import os
 import sys
-from dotenv import load_dotenv
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -15,8 +14,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 # access to the values within the .ini file in use.
 config = context.config
 
-
-load_dotenv()
 # Overwrite the database url from alembic
 database_url = os.getenv("DATABASE_URL")
 if not database_url:
